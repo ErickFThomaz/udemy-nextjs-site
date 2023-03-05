@@ -5,8 +5,6 @@ import Navigation from '@components/navigation'
 import {getPostList} from "@shared/utils";
 import Link from "next/link";
 
-type PostList = string[]
-
 function Home({posts} : InferGetStaticPropsType<typeof getStaticProps>) {
     return (
         <>

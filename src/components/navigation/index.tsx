@@ -14,9 +14,9 @@ const LINKS = [
 ]
 
 
-function NavAnchor({path, children}: { path: string; children: string }) {
+function NavAnchor({path, name}: { path: string; name: string }) {
     return (
-        <Link className={styles.navAnchor} href={path}>{children}</Link>
+        <Link className={styles.navAnchor} href={path}>{name}</Link>
     )
 }
 
@@ -29,7 +29,7 @@ export default function Navigation() {
                 <ul className={styles.list}>
                     {LINKS.map(({name, path}) => (
                         <li key={path}>
-                            {path === pathname ? <span>{name}</span> : <NavAnchor path={path} children={name}/>}
+                            {path === pathname ? <span>{name}</span> : <NavAnchor path={path} name={name}/>}
                         </li>
                     ))}
                 </ul>

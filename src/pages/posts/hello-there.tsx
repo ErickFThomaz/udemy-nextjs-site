@@ -7,7 +7,7 @@ const Hello = () => (
     <>
         <Head>
             <title>Hello There :: My Blog</title>
-            <meta name="description" content={"Meu primeiro post de do meu blog"}/>
+            <meta name="description" content={'Meu primeiro post de do meu blog'}/>
         </Head>
         <Navigation/>
         <article>
@@ -15,8 +15,8 @@ const Hello = () => (
             <h1>Hello there!</h1>
             </title>
             <div className={styles.img}>
-                <Image className={styles.center} src={"/posts/hello-there/img.png"} width={400} height={250} alt={""}/>
-                <Image className={styles.center} src={"/posts/hello-there/img.png"} width={400} height={250} alt={""}/>
+                <Image className={styles.center} src={'/posts/hello-there/img.png'} width={400} height={250} alt={''}/>
+                <Image className={styles.center} src={'/posts/hello-there/img.png'} width={400} height={250} alt={''}/>
             </div>
             <article className={styles.postcontent}>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
