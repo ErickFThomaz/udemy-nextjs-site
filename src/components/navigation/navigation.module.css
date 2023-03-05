@@ -1,0 +1,27 @@
+.navegation {
+    height: 50%;
+    width: 50%;
+    background-color: #3a3737;
+    display: flex;
+    margin: 0 auto;
+}
+
+.list {
+   margin: 0 auto 0 auto;
+    list-style: none;
+    padding: 1em 0;
+    display: flex;
+}
+
+.list > * + * {
+    margin-left: 1rem;
+}
+
+.navAnchor{
+    text-decoration: underline 2px;
+}
+
+.navAnchor:hover,
+.navAnchor:focus{
+    text-decoration: underline dotted 2px;
+}
