@@ -16,10 +16,11 @@ function Home({posts} : InferGetStaticPropsType<typeof getStaticProps>) {
             <main>
                 <Navigation/>
                 <Header/>
+                <h2>Recent Posts</h2>
                 {posts.length > 0 && (
                     <ul>
                         {posts.map((value) => (
-                           <li key={value}><Link href={`posts/${value}`}>{value.replaceAll('-', ' ')}</Link></li>
+                           <li key={value}><Link href={`posts/${value}`}>{value.replace(/-/g, ' ')}</Link></li>
                         ))}
                     </ul>
                 )}
